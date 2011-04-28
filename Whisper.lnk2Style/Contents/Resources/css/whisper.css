@@ -45,18 +45,18 @@ html {
     .sender[type=five] { color: #820; }
     .sender[type=six] { color: #808; }
     .sender[type=seven] { color: #f80; }
-    .sender[type=eight] { color: #ac5; }
+    .sender[type=eight] { color: #0b5; }
     .sender[type=nine] { color: #006; }
     .sender[type=ten] { color: #088; }
     .sender[type=eleven] { color: #a1f; }
-    .sender[type=twelve] { color: #cc6; }
+    .sender[type=twelve] { color: #aa6; }
     .sender[type=thirteen] { color: #d8f; }
     .sender[type=fourteen] { color: #888; }
     .sender[type=fifteen] { color: #c66; }
     .sender[type=sixteen] { color: #b41; }
     .sender[type=seventeen] { color: #aa0; }
-    .sender[type=eighteen] { color: #6df; }
-    .sender[type=ninteen] { color: #7f4; }
+    .sender[type=eighteen] { color: #6bd; }
+    .sender[type=ninteen] { color: #7c4; }
     .sender[type=twenty] { color: #665; }
     
     .message[type=system] { color: #080; }
