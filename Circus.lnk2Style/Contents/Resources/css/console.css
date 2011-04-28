@@ -1,0 +1,70 @@
+/* Normal stuffs */
+html {
+}
+body {
+	font-family: Helvetica, Sans-serif;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+div#content {
+	height: 100%;
+	overflow-x: hidden;
+	position: relative;
+	z-index: 0;
+	margin: 0;
+}
+	div#inner {
+		float: left;
+		width: 100%;
+	}
+		div.post {
+			overflow-x: hidden;
+			background: #f0f0f0;
+			margin: 0;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #d0d0d0;
+			position: relative;
+		}
+		div.post:first-child {
+			border-top-width: 0px !important;
+		}
+			span.message {
+				padding: 6px;
+				margin:0 10px;
+				word-wrap: break-word;
+				display: table-cell;
+			}
+				span.message a {
+					color: #6a787c;
+				}
+		div.post.raw,
+		div.post.notice-auth {
+			text-align: center;
+			color: #6a787c;
+		}
+		div.post.notice {
+			text-align: left;
+			color: #000;
+		}
+		div.break {
+			background: #4fd1c7;
+			height: 2px;
+			width: 100%;
+		}
+			div.break +	div.post {
+				border-top-color: #4fd1c7 !important;
+			}
+	div#overlay {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		opacity: 0.8;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		display: none;
+		z-index: 100;
+	}

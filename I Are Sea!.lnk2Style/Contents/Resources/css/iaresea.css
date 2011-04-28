@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Bitstream Vera Mono";
+  font-style: normal;
+  src: url(../font/VeraMono.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bitstream Vera Mono";
+  font-weight: bold;
+  font-style: normal;
+  src: url(../font/VeraMoBd.ttf) format("truetype");
+}
+
+body {
+	font-style: normal;
+	font-family: "Bitstream Vera Mono";
+}
+
+p { 
+	font-family: "Bitstream Vera Mono";
+	font-style: normal;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 50px;
+	text-indent: -50px;
+}
+
+a, a:visited, a:active {
+	text-decoration: none;
+	font-style: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div#overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.5;
+	height: 100%;
+	width: 100%;
+	display: none;
+	z-index: 100;
+}
+
+div#overlay p {
+    height: 50%;
+    text-align: center;
+    top: 20%;
+    font-size: 32px;
+}
+		
+div#topic {
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 22px;
+    min-height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    z-index: 80;
+	font-style: normal;
+}
+
+div#topic span#topicText {
+	padding-top: 3px;
+	padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+	font-style: normal;
+    text-align: left;
+    line-height: 18px;
+    float: left;
+    width: 99%;
+    height: 22px;
+    min-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 81;
+}
+
+div#content.has-title {
+	margin-top: 22px;
+}
+
+.nickname,.info  {
+	font-weight: bold;	
+}
+
+.nickname.msgMessage:before {
+	content: '<';
+	font-weight: bold;	
+}
+
+.nickname.msgMessage:after {
+	content: '>';
+	font-weight: bold;	
+}
+
+.nickname.msgAction:before {
+	content: '* ';	
+}
+
+.hostname,.channelname {
+	font-weight: normal;	
+}
+
+.info.msgRaw:before,.info.msgJoin:before,.info.msgPart:before,.info.msgQuit:before,.info.msgKick:before,.info.msgTopicReply:before,.info.msgNick:before,
+.info.msgRaw:after,.info.msgJoin:after,.info.msgPart:after,.info.msgQuit:after,.info.msgKick:after,.info.msgTopicReply:after,.info.msgNick:after,
+.nickname-notice-alternate.msgNotice:before,
+.nickname-notice-alternate.msgNotice+.hostname-notice.msgNotice:after,
+.info.msgModeChange:before,
+.info.msgModeChange:after 
+{
+	content: '-';
+	font-weight: bold;
+}
+
+.hostname.msgJoin:before,.hostname.msgQuit:before,.hostname.msgPart:before,.quitreason.msgKick:before,.quitreason.msgQuit:before,.quitreason.msgPart:before,
+.channelmodes.msgModeChange:before,.usermodes.msgModeChange:before {
+	content: '[';
+	font-weight: bold;	
+}
+
+.hostname.msgJoin:after,.hostname.msgQuit:after,.hostname.msgPart:after,.quitreason.msgKick:after,.quitreason.msgQuit:after,.quitreason.msgPart:after,
+.channelmodes.msgModeChange:after,.usermodes.msgModeChange:after 
+{
+	content: ']';
+	font-weight: bold;	
+}
+
+.hostname.msgNotice:before {
+	content: '(';
+}
+
+.hostname.msgNotice:after {
+	content: ')';
+}
+
+.nickname-notice-alternate.msgNotice+.hostname-notice.msgNotice:after {
+	content: ')-';
+}
+	
+/*
+ *	Colors
+ */
+
+body,.info,.channelname,.nickname {
+	color: #fff;	
+}
+
+body,div#overlay {
+	background-color: #000;	
+}	
+/* text in inactive state (overlay in groups for example) */
+div#overlay p {
+	color: #ddd;
+}
+/* topic background color */
+div#topic { 
+	background-color: #0F25A8;
+}
+/* text in topic & links */
+div#topic,.div#topic span#topicText,div#topic a, a, a:visited, a:active {
+	color: #BFC0C1;
+}
+/* notice bars */
+.info.msgRaw:before,.info.msgJoin:before,.info.msgPart:before,.info.msgQuit:before,.info.msgKick:before,.info.msgNick:before,.info.msgTopicReply:before,
+.info.msgRaw:after,.info.msgJoin:after,.info.msgPart:after,.info.msgQuit:after,.info.msgKick:after,.info.msgNick:after,.info.msgTopicReply:after,
+.info.msgModeChange:before,
+.info.msgModeChange:after
+{
+	color: #3838FB;	
+}	
+/* nickname & square brackets also spotlight and starred messages */
+.nickname.msgMessage:before,.hostname.msgJoin:before,.hostname.msgQuit:before,.hostname.msgNotice:before,.quitreason.msgKick:before,
+.nickname.msgMessage:after,.hostname.msgJoin:after,.hostname.msgQuit:after,.hostname.msgNotice:after,.quitreason.msgKick:after,
+.spotlight,.starred,
+.nickname-notice-alternate.msgNotice:before,
+.nickname-notice-alternate.msgNotice+.hostname-notice.msgNotice:after,
+.channelmodes.msgModeChange:before,.usermodes.msgModeChange:before,.quitreason.msgQuit:before,.quitreason.msgPart:before,
+.channelmodes.msgModeChange:after,.usermodes.msgModeChange:after,.quitreason.msgQuit:after,.quitreason.msgPart:after
+{
+	color: #6E6F6F;
+}
+/* query partner */
+.nickname-query {
+	color: #E13426;
+}
+/* the person's nickname who highlighted you
+ * to highlight the whole line use p[highlight="true"] { property:value; }
+ */ 
+.nickname-highlight {
+	color: #E1D127;
+}
+/* the one that receives the action */
+.nickname-change,.nickname-join,.nickname-kick-victim,.channelname-modechange {
+	color: #5DE9E9;
+}	
+/* the one that does action */
+.nickname-info,.nickname-kick-op,.nickname-part,.nickname-quit,.hostname,.channelname-join,.channelname-part {
+	color: #4CABB9;
+}
+/* hostname-less notice */
+.nickname-notice {
+	color: #4DA91E;	
+}
+/* hostname containing notice */
+.nickname-notice-alternate {
+	color: #DB40F4;	
+}
+/* hostname of hostname containing notice */
+.hostname-notice {
+	color: #B23BC7;	
+}			

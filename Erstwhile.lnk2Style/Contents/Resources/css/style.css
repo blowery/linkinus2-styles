@@ -1,0 +1,295 @@
+/* Nick Colours */
+.zero .nickname { color: #000;  }
+.one .nickname { color: #06708b; }
+.two .nickname { color: #1c8b06; }
+.three .nickname { color: #ff55e5; }
+.four .nickname { color: #8b6d06; }
+.five .nickname { color: #8b60ab; }
+.six .nickname { color: #67ace6; }
+.seven .nickname { color: #9ad041; }
+.eight .nickname { color: #ffa7c6; }
+.nine .nickname { color: #ff201e; }
+.ten .nickname { color: #ffa041; }
+.eleven .nickname { color: #000; }
+.twelve .nickname { color: #06708b; }
+.thirteen .nickname { color: #1c8b06; }
+.fourteen .nickname { color: #ff55e5; }
+.fifteen .nickname { color: #8b6d06; }
+.sixteen .nickname { color: #8b60ab; }
+.seventeen .nickname { color: #67ace6; }
+.eighteen .nickname { color: #9ad041; }
+.ninteen .nickname { color: #ffa7c6; }
+.twenty .nickname { color: #ff201e; }
+/* Media */
+div#media {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background: #000;
+	padding: 5px 5px 2px 5px;
+	-webkit-border-radius: 5px;
+	display: none;
+	z-index: 101;
+}
+div.image {
+	width: 100%;
+	overflow: auto;
+	padding-left: 30px;
+}
+div.video {
+	width: 100%;
+	overflow: auto;
+	padding-left: 30px;
+}
+	div.image div,
+	div.video div {
+		background: #000;
+		padding: 5px 5px 2px 5px;
+		-webkit-border-radius: 5px;
+		float: left;
+	}
+		div.image div img {
+			margin: 0;
+			padding: 0;
+		}
+	div.image span,
+	div.image a,
+	div.video span,
+	div.video a {
+		cursor: pointer;
+		float: left;
+		display: block;
+		background: #000;
+		padding: 5px;
+		line-height: 0;
+		margin-left: 4px;
+		margin-bottom: 4px;
+		color: #fff !important;
+		text-decoration: none;
+		-webkit-border-radius: 5px;
+	}
+	div.video a,
+	div.image a {
+		margin-left: 12px !important;
+	}
+		div.image span img,
+		div.image a img,
+		div.video span img,
+		div.video a img  {
+			opacity: 0.9;
+		} 
+		div.image span:hover img,
+		div.image a:hover img,
+		div.video span:hover img,
+		div.video a:hover img  {
+			opacity: 1;
+		} 
+img.emoticon {
+	margin-top:-5px;
+	vertical-align: middle;
+	display: inline;
+}
+/* Normal stuffs */
+html {
+}
+body {
+	font-family: Helvetica, Sans-serif;
+	font-size: 11px;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}	
+div#topic {
+	background: url(../img/bgTopic.png) 0 bottom repeat-x;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	overflow: visible;
+	z-index: 80;
+	color: #fff;
+	cursor: pointer;
+}
+	div#topic a {
+		color: #fff;
+	}
+	div#topic div {
+		height: 100%;
+		width: 100%;
+		padding: 10px 0 15px;
+	}
+	div.new div {
+		margin: 0 0 -3px;
+		background: url(../img/bgTopicNew.png) left bottom no-repeat;
+	}
+	div#topic span {
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		word-wrap:break-word;
+	}
+body.console div#content div.post span.message {
+	text-align: left !important;
+}
+body.console div#content div.post span.star {
+	display: none;
+}
+div#content {
+	height: 100%;
+	overflow-x: hidden;
+	z-index: 0;
+	margin: 15px 0 0 0;
+	position: relative;
+}
+.query div#content {
+	margin: 0px;
+}
+div#query {
+	height: 100%;
+	overflow-x: hidden;
+	position: relative;
+	z-index: 0;
+}
+	div#inner {
+		float: left;
+		width: 100%;
+	}
+		div.post:first-child {
+		}
+		div.post {
+			overflow-x: hidden;
+			background: #fff;
+			margin: 0;
+			border-top: 1px solid #e6e6e6;
+			position: relative;
+			background: url(../img/bgNick.png) 0 0 repeat-y;
+		}
+		div.post.hidenick span.nickname {
+			opacity: 0;
+		}
+		div.post:first-child {
+			border-top-width: 0px !important;
+		}
+		div.post:hover span.star {
+			opacity: 1;
+		}
+		div.post.starred span.star {
+			opacity: 1;
+		}
+			span.nickname {
+				/*border-right: 1px solid #b2cfff;*/
+				display: table-cell;
+				text-align: right;
+				height: 100%;
+				width: 80px;
+				word-wrap: break-word;
+				padding: 6px;
+				color: #121212;
+				font-weight: bold;
+			}
+			span.message {
+				padding: 6px 0 6px 12px;
+				margin:0;
+				word-wrap: break-word;
+				display: table-cell;
+			}
+				span.message .description {	
+					word-wrap: break-word;
+				}
+				span.message a {
+					color: #6a787c;
+				}
+			span.star {
+				display: table-cell;
+				width: 20px;
+				opacity: 0;
+				background: url(../img/bgStar.png) 14px center no-repeat;
+				padding: 6px;	
+			}
+				span.star:hover {
+					background: url(../img/bgStar.png) -16px center no-repeat;	
+					cursor: pointer;
+				}
+		div.post.action {
+			background: #fff;
+		
+		}
+			div.post.action span.message {
+				text-align: center;
+			}
+				div.post.action span.nickname {
+					display: inline;
+					float: none !important;
+					border-width: 0px;
+					width: auto;
+					padding: 0px;
+				}
+		div.post.join,
+		div.post.part,
+		div.post.quit,
+		div.post.nick,
+		div.post.topic-change,
+		div.post.raw,
+		div.post.notice,
+		div.post.mode-change,
+		div.post.notice-auth,
+		div.post.topic-details-reply,
+		div.post.kick {
+			text-align: center;
+			color: #6a787c;
+			background: #fff;
+		}
+			div.post.join span.nickname,
+			div.post.part span.nickname,
+			div.post.quit span.nickname,
+			div.post.nick span.nickname,
+			div.post.topic-change span.nickname,
+			div.post.mode-change span.nickname,
+			div.post.topic-details-reply span.nickname,
+			div.post.kick span.nickname {
+				display: inline;
+				border-width: 0px;
+				float: none !important;
+				width: auto;
+				padding: 0px;
+				color: #424e52;
+			}
+			
+		div.post.starred {
+			background: #e6e6e6;	
+		}			
+			div.post.starred span.star {
+				background-position: -46px center;	
+			}
+		div.post.highlighted {
+			background: #d4efff;
+			border-top-color: #d4efff;
+		}
+			div.post.highlighted + div.post {
+				border-top-color: #d4efff !important;
+			}
+		div.post.action {
+			font-style: italic;
+		}
+		div.break {
+			background: #4fd1c7;
+			height: 2px;
+			width: 100%;
+		}
+			div.break +	div.post {
+				border-top-color: #4fd1c7 !important;
+			}
+	div#overlay {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		opacity: 0.6;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		display: none;
+		z-index: 100;
+	}

@@ -1,0 +1,53 @@
+.nickname.msgAction:before {
+	content: ' \2744  ';	
+}
+
+/*
+ *	Colors
+ */
+
+body,.info,.channelname,.nickname,div#topic span {
+	color: #000;	
+}
+
+body {
+	background-color: #fff;
+}
+
+div#topic { 
+	background-color: #A62F00;
+}
+
+.info.msgRaw:before,.info.msgJoin:before,.info.msgPart:before,.info.msgQuit:before,.info.msgKick:before,.info.msgNick:before,.info.msgTopicReply:before,
+.info.msgRaw:after,.info.msgJoin:after,.info.msgPart:after,.info.msgQuit:after,.info.msgKick:after,.info.msgNick:after,.info.msgTopicReply:after,
+.info.msgModeChange:before,
+.info.msgModeChange:after,
+.nickname-change,.nickname-join,.nickname-kick-victim,.channelname-modechange,
+.spotlight,.starred 
+{
+	color: #A60000;
+}	
+
+
+div#topic a, a, a:visited, a:active,
+.nickname-info,.nickname-kick-op,.nickname-part,.nickname-quit,.hostname,.channelname-join,.channelname-part 
+{
+	color: #FF4040;
+}
+
+.nickname-highlight
+{
+	color: #f00;
+}
+
+.nickname.msgMessage:before,.hostname.msgJoin:before,.hostname.msgQuit:before,.hostname.msgNotice:before,.quitreason.msgKick:before,
+.nickname.msgMessage:after,.hostname.msgJoin:after,.hostname.msgQuit:after,.hostname.msgNotice:after,.quitreason.msgKick:after,
+.nickname-notice-alternate.msgNotice:before,
+.nickname-notice-alternate.msgNotice+.hostname-notice.msgNotice:after,
+.channelmodes.msgModeChange:before,.usermodes.msgModeChange:before,
+.channelmodes.msgModeChange:after,.usermodes.msgModeChange:after, 
+.nickname-query,.nickname-notice,.hostname-notice,
+.nickname-notice-alternate
+{
+	color: #94002D;
+}

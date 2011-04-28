@@ -1,0 +1,200 @@
+/*
+ *  common.css
+ *  Linkinus 2.0 Style Engine
+ *
+ *  Created by Nicholas Penree on 4/21/09.
+ *  Copyright 2009 Conceited Software. All rights reserved.
+*/
+
+@import url('hintbox.css');
+@import url('embed.css');
+ 
+div#overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.5;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+	z-index: 100;
+}
+
+div#overlay p {
+    height: 50%;
+    text-align: center;
+    top: 20%;
+    font-size: 32px;
+    color:  #ddd;
+}
+		
+div#topic {
+    background-color: #bcbcbc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#bcbcbc));
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 28px;
+    min-height: 28px;
+    line-height: 28px;
+    font-size: 11px;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 80;
+    -webkit-box-shadow: #888 0 2px 2px;
+    border-bottom: solid 1px #a3a3a3;
+}
+
+div#topic span#topicText {
+    padding-top:  6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 12px;
+    text-align:center;
+    line-height: 18px;
+    float: left;
+    width: 99%;
+    height: 18px;
+    min-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+    text-shadow: #e3e3e3 0px 1px;
+    z-index: 81;
+}
+
+div#topic span a:hover {
+    color: #f3f3f3;
+    text-shadow: #333 0px 1px;
+
+}
+
+div#topic img#searchButton {
+    padding-top: 6px;
+    margin-left: -42px;
+	position:  absolute;
+	left: 99%;
+	float: right;
+	z-index: 82;
+	border:0;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+div#search {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 18px;
+    min-height: 18px;
+    padding: 5px;
+    background-color: #bcbcbc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#bcbcbc));
+    overflow: hidden;
+    color: #333;
+    /*text-shadow: #f1f1f1 0px 1px;*/
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 80;
+    -webkit-box-shadow: #bbb 0 4px 4px;
+    border-top: solid 1px #a3a3a3;
+    overflow-y: auto; 
+}
+
+input[type=search]#searchField {
+	margin: 0;
+	margin-top: -1px;
+	padding: 0;
+	position: fixed;
+	right: 56px;
+}
+
+span#searchMatches {
+	position: fixed;
+    right: 260px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-top: 1px;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	text-align: right;
+}
+
+img#pn {
+	position: fixed;
+    right: 210px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-top: -2px;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+img#closeSearch {
+	position: fixed;
+    left: 8px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-top: 3px;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+img#doneSearch {
+	margin: 0;
+	margin-top: -3px;
+	padding: 0;
+	position: fixed;
+	right: 5px;
+    border: 0;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+
+.linebreak {
+	background-color: #555555;
+	height: 1px;
+	width: 100%;
+}
+
+.linebreak img {
+	position: absolute;
+	left: 0;
+	border: 0;
+	margin-top: -6px;
+	margin-left: -5px;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+}
+
+.poof {
+	background: transparent url(../img/poof.png) no-repeat 0 0;
+	cursor: pointer;
+	display: none;
+	height: 32px;
+	position: absolute;
+	width: 32px;
+}
+
+span.remove {
+	display: inline;
+	position: absolute;
+    left: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+span.remove img {
+    margin-top: 3px;
+	height: 13px;
+	width: 13px;
+	border: 0px;
+	vertical-align: middle;
+}

@@ -1,0 +1,651 @@
+/*
+ *  whisper.css
+ *  Whisper
+ *
+ *  Created by Nicholas Penree on 4/21/09.
+ *  Copyright 2009 Conceited Software. All rights reserved.
+*/
+
+html {
+      font-family: 'Courier';
+      background-color: white;
+      color: black;
+      word-wrap: break-word;
+      margin: 0;
+      padding: 3px 4px 10px 4px;
+    }
+    body { margin: 0; padding: 0; }
+    /*img { border: 1px solid #aaa; vertical-align: top; }*/
+    object { vertical-align: top; }
+    hr { margin: 0.5em 2em; }
+    .line { margin: 0 -4px; padding: 0 4px 1px 4px; }
+    .line[alternate=even] {}
+    .line[alternate=odd] {}
+    .line[type=action] .sender:before {
+      content: "• ";
+      white-space: nowrap;
+    }
+    .url { word-break: break-all; }
+    .address { text-decoration: underline; word-break: break-all; }
+    .highlight { color: #f0f; font-weight: bold; }
+    .starred { color: #aaa; font-weight: bold; }
+}
+    .time { color: #048; -webkit-user-select: none; text-shadow: #fff 0px 1px; }
+    .place { color: #008; }
+    .sender { text-shadow: #fff 0px 1px; }
+    .message { text-shadow: #fff 0px 1px; }
+    .sender[type=consecutive] { -webkit-user-select: none; }
+    .sender[type=myself] { color: #7ae; }
+    .sender[type=normal] { color: #008; }
+    .sender[type=zero] { color: #333; }
+    .sender[type=one] { color: #66a; }
+    .sender[type=two] { color: #458; }
+    .sender[type=three] { color: #080; }
+    .sender[type=four] { color: #a32; }
+    .sender[type=five] { color: #820; }
+    .sender[type=six] { color: #808; }
+    .sender[type=seven] { color: #f80; }
+    .sender[type=eight] { color: #ac5; }
+    .sender[type=nine] { color: #006; }
+    .sender[type=ten] { color: #088; }
+    .sender[type=eleven] { color: #a1f; }
+    .sender[type=twelve] { color: #cc6; }
+    .sender[type=thirteen] { color: #d8f; }
+    .sender[type=fourteen] { color: #888; }
+    .sender[type=fifteen] { color: #c66; }
+    .sender[type=sixteen] { color: #b41; }
+    .sender[type=seventeen] { color: #aa0; }
+    .sender[type=eighteen] { color: #6df; }
+    .sender[type=ninteen] { color: #7f4; }
+    .sender[type=twenty] { color: #665; }
+    
+    .message[type=system] { color: #080; }
+    .message[type=error] { color: #f00; font-weight: bold; }
+    .message[type=reply] { color: #088; }
+    .message[type=error_reply] { color: #f00; }
+    .message[type=dcc_send_send] { color: #088; }
+    .message[type=dcc_send_receive] { color: #00c; }
+    .message[type=privmsg] {}
+    .message[type=notice] { color: #888; }
+    .message[type=action] {}
+    .message[type=join] { color: #233244; }
+    .message[type=part] { color: #080; }
+    .message[type=kick] { color: #080; }
+    .message[type=quit] { color: #080; }
+    .message[type=kill] { color: #080; }
+    .message[type=nick] { color: #080; }
+    .message[type=mode] { color: #080; }
+    .message[type=topic] { color: #080; }
+    .message[type=invite] { color: #080; }
+    .message[type=wallops] { color: #080; }
+    .message[type=debug_send] { color: #aaa; }
+    .message[type=debug_receive] { color: #444; }
+       
+    .effect[color-number='0'] { color: #fff; }
+    .effect[color-number='1'] { color: #000; }
+    .effect[color-number='2'] { color: #008; }
+    .effect[color-number='3'] { color: #080; }
+    .effect[color-number='4'] { color: #f00; }
+    .effect[color-number='5'] { color: #800; }
+    .effect[color-number='6'] { color: #808; }
+    .effect[color-number='7'] { color: #f80; }
+    .effect[color-number='8'] { color: #ff0; }
+    .effect[color-number='9'] { color: #0f0; }
+    .effect[color-number='10'] { color: #088; }
+    .effect[color-number='11'] { color: #0ff; }
+    .effect[color-number='12'] { color: #00f; }
+    .effect[color-number='13'] { color: #f0f; }
+    .effect[color-number='14'] { color: #888; }
+    .effect[color-number='15'] { color: #ccc; }
+    .effect[bgcolor-number='0'] { background-color: #fff; }
+    .effect[bgcolor-number='1'] { background-color: #000; }
+    .effect[bgcolor-number='2'] { background-color: #008; }
+    .effect[bgcolor-number='3'] { background-color: #080; }
+    .effect[bgcolor-number='4'] { background-color: #f00; }
+    .effect[bgcolor-number='5'] { background-color: #800; }
+    .effect[bgcolor-number='6'] { background-color: #808; }
+    .effect[bgcolor-number='7'] { background-color: #f80; }
+    .effect[bgcolor-number='8'] { background-color: #ff0; }
+    .effect[bgcolor-number='9'] { background-color: #0f0; }
+    .effect[bgcolor-number='10'] { background-color: #088; }
+    .effect[bgcolor-number='11'] { background-color: #0ff; }
+    .effect[bgcolor-number='12'] { background-color: #00f; }
+    .effect[bgcolor-number='13'] { background-color: #f0f; }
+    .effect[bgcolor-number='14'] { background-color: #888; }
+    .effect[bgcolor-number='15'] { background-color: #ccc; }
+    
+html.normal {
+    color: #4b4b4b;
+    background-color: white;
+    font: 12px/1.3em 'Lucida Grande' sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*body.normal a img {
+    border: 0;
+}*/
+
+/*body.normal img {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    max-width: 95%;
+    max-height: 100px;
+}*/
+
+body.normal a:link, a:visited, a:active {
+    color: #184586;
+}
+
+body.normal a:hover {
+    color: #31B8FF;
+}
+body.normal .text span {
+    display: block;
+}
+
+body.normal .line {
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    line-height: 130%;
+}
+
+body.normal .event {
+    padding: 0.2em;
+    margin: 0;
+    color: #2B2B2B;
+    background: #DEE6F2; /*#e5edf7;*/
+}
+
+body.normal .event + .event {
+    border-top: #fff 1px solid;
+}
+
+body.normal .text span.message {
+    border-bottom: #efefef 1px solid;
+}
+
+body.normal .text + .event {
+    margin-top: -1px;
+}
+
+body.normal .sender {
+    padding: 0.4em 0;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    width: 130px;
+    overflow: hidden;
+}
+
+body.normal .sender:hover:before, body.normal .sender[starred=true]:hover:before {
+	content: "★ ";
+}
+
+ body.normal[type=logviewer] .sender:hover:before, body.normal[type=global] .sender:hover:before {
+	content: "";
+}
+
+/* TODO: FIX ME*/
+
+body.normal .sender[starred=true]:before {
+	content: "★ ";
+	color: #3E8040;
+} 
+
+body.normal .sender[type=consecutive][starred=true]:before {
+	color: #3E8040;
+}
+
+body.normal .line .message {
+    margin: 0 0 0 134px;
+    padding: 0.4em;
+    color: #303030;
+    border-left: 1px solid #dcdcdc;
+    background-color: #fff;
+}
+
+body.normal .event .message {
+    margin: 0;
+    padding: 0.4em;
+    border: 0;
+    color: #a6b9c0;
+    background: none;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    d
+}
+
+body.normal .line .time strong {
+    background: #888;
+    -webkit-border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 10px;
+    color: #fff;
+}
+body.normal .line .time {
+    clear: both;
+    float: right;
+    margin-right: 6px;
+    margin-top: 5px;
+    margin-left: 4px;
+    color: #999;
+    -webkit-user-select: none;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+body.normal .line .place {
+    display: block;
+    color: #999;
+    margin: 0;
+}
+
+body.normal .event .time {
+    margin: 1px 3px;
+    float: right;
+    text-align: right;
+    color: #a6b9c0;
+    -webkit-user-select: none;
+}
+
+ body.normal .line[type=action] .sender[starred=true] {
+    background-color: #BDEFBC;
+    width: 134px;
+}
+
+body.normal .line span.message[starred=true] {
+    background-color: #BDEFBC;
+}
+
+body.normal .line[highlight=true] span.message, body.normal .line span.message[highlight=true] {
+    background-color: #ffc;
+}
+
+body.normal .member {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+body.normal .member:hover {
+    text-decoration: underline;
+}
+
+body.normal {
+    
+}
+
+body.console {
+}
+
+body[type=channel] {
+    
+}
+
+body[type=query] {
+    
+}
+
+body[type=console] {
+}
+
+body.normal hr {
+    margin: 0;
+    /*padding-left: 0px;*/
+    border: none;
+    background-color: #d33b54;
+    height: 1px;
+    text-align: center;
+}
+
+body.normal img.arrow {
+	top: -20px;
+}
+a {
+    
+}
+
+/* lines */
+
+.line[alternate=even] {
+    
+}
+
+.line[alternate=odd] {
+    
+}
+
+.line[type=action] .sender:before {
+    content: "";
+}
+
+body.normal .line[type=action] .sender {
+    font-style: italic;
+}
+
+body.normal .line[highlight=true][type=action] .sender {
+    font-style: italic;
+    background-color: #ffc;
+    width: 134px;
+}
+
+body.normal .line[type=action] .message {
+    background: #eee;
+    border-left: none;
+    margin: 0 0 0 134px;
+}
+
+body.normal .url {
+    word-break: break-all;
+}
+
+body.normal .address {
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+body.normal .highlight {
+    color: #d33b54;
+    font-weight: bold;
+}
+
+
+/* nickname for text messages */
+
+body.normal .sender[type=normal] {
+    color: #333;
+   /* clear:both;*/
+}
+
+
+/* message body */
+
+body.normal .message[type=system] {
+    color: #303030;
+}
+
+body.normal .message[type=error] {
+    color: #d14025;
+    font-weight: bold;
+}
+
+body.normal .message[type=reply] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=error_reply] {
+    color: #d33b54;
+}
+
+body.normal .message[type=dcc_send_send] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=dcc_send_receive] {
+    color: #153b7c;
+}
+
+body.normal .message[type=privmsg] {
+    
+}
+
+body.normal .message[type=notice] {
+    color: #888;
+}
+
+body.normal .message[type=action] {
+    color: #303030;
+    font-style: italic;
+    font-weight: bold;
+}
+
+body.normal .message[type=join] {
+    color: #BAAED5;
+}
+
+body.normal .message[type=part] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=kick] {
+    color: #303030;
+}
+
+body.normal .message[type=quit] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=kill] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=nick] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=mode] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=topic] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=invite] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=wallops] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=debug_send] {
+    color: #aaa;
+}
+
+body.normal .message[type=debug_receive] {
+    color: #444;
+}
+
+span .starred {
+	color: #ffb265;
+}
+
+span .notstarred {
+	color: #aaa;
+}
+
+#pastcontent_outter {
+	margin: 0;
+	padding: 0;
+	
+}
+
+body[type=global] #content, body[type=logviewer] #content {
+    padding-top:0px;
+}
+
+#pastcontent {
+	margin: 0;
+	color: #fff;
+	padding-top: 29px;
+	opacity: 0.6;
+}
+
+.code_line {
+	background-color: #ccc;
+	color: #777;
+	font-size: 10px;
+	padding: 0;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0;
+    -webkit-user-select: none;
+    margin-left: 20px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.first {
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+}
+
+.code_code {
+	padding: 0;
+	margin: 0;
+	white-space:pre-wrap;
+}
+
+.code_table {
+	border-spacing: 0px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 30px;
+}
+
+.code_menu { 
+    background-color:#bcbcbc;
+    background:-webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#bcbcbc));
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    display: block;
+    padding: 5px;
+	font-size: 10px;
+	-
+}
+
+.code_button { 
+    width: 150px; 
+    text-align: center; 
+    border: 1px solid black; 
+    background-color: #ccc; 
+    margin: 10px; 
+    padding: 10px; 
+    cursor: default; 
+    font-size: 9pt;
+}
+
+.code_button.hover { 
+    background-color: #eee;
+}
+
+.code_button.active { 
+    background-color: #aaa;
+}
+
+body.normal img.emoticon {
+    margin: 0;
+    padding: 0;
+	border: 0;
+	display: inline;
+	vertical-align: middle;
+	-webkit-user-drag: none;
+	margin-top: -5px;
+}
+/*
+
+.sender:hover, body.normal[type=global] .sender[type=consecutive]:hover, body.normal[type=global] .message:hover, body.normal[type=global] .message:hover,
+body.normal[type=global] .line:hover, body.normal[type=global] .line:hover, body.normal[type=global] .line:hover .time, body.normal[type=global] .line:hover .time */
+
+
+body.normal[type=global] .line:hover .time {
+	color: #fff;
+}
+
+body.normal[type=global] .line:hover .time:hover, body.normal[type=global] .line:hover + .sender:hover .time {
+    color: #999;
+}
+
+body.normal[type=global] .message:hover {
+	cursor: pointer;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#9eaecd), to(#7385ac));
+	color: #fff;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+body.normal[type=global] .message:active{
+	cursor: pointer;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#7385ac), to(#9eaecd));
+	color: #fff;
+	font-weight: bold;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-webkit-user-modify: none;
+	cursor: default;
+	text-shadow: none;
+}
+
+div#loading {
+    border: 1px #B4B4B4 solid;
+    -webkit-border-radius: 6px;
+	width: 200px;
+	height: 155px;
+	text-align: center;
+	position: absolute;
+	font-size: 10px;
+	left: 48%;
+	top: 50%;
+	margin-left: -100px; 
+	margin-top: -78px; 
+    opacity: 1.0;
+    padding-top: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color: #fff;
+}
+
+div#loading span {
+    float: right;	
+    z-index: 102;
+    position: absolute;
+    right: 25px;
+    top: 60px;
+    font-weight: bold;
+    color: #000;
+}
+div#loading span sup {
+    font-weight: bold;
+	font-style: italic;
+	color: #666;
+}
+div#loading p {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 18px;
+	color: #000;
+    z-index: 101;
+}
+div#loading img {
+    border: 0;
+    background: #fff;
+    z-index: 101;
+}
+
+div#loading img#ellipsis {
+    border: 0;
+    background: #fff;
+    z-index: 101;
+    margin-top: -10px;
+}
+
+div.image div,
+div.video div,
+div.audio span,
+div.image span,
+div.audio a,
+div.image a,
+div.video span,
+div.video a {
+    background-color:#bcbcbc;
+    background:-webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#bcbcbc));
+}

@@ -1,0 +1,90 @@
+/* Normal stuffs */
+html {
+}
+body {
+	font-family: Lucida Grande, Sans-serif;
+	font-size: 11px;
+	background: #c7c7c7;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}	
+#highlights div.post span.remove {
+	display: none !important;
+}
+#highlights div.post {
+	padding-left: 10px;
+}
+#stars div.post {
+	padding-left: 0px;
+}
+div#content {
+	height: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	position: relative;
+	z-index: 0;
+}
+	div#inner {
+		float: left;
+		width: 100%;
+	}
+		div.post {
+			overflow-x: hidden;
+			background-color: #c7c7c7;
+			margin: 0;
+			border-top: 1px solid #d7d7d7;
+			border-bottom: 1px solid #a8a8a8;
+			position: relative;
+			padding: 11px 0;
+			text-shadow: 0px 1px 1px #fff;
+  			-webkit-transition: background-color 0.3s linear;
+		}
+		div.post:hover {
+			background-color: #e0e0e0;
+			cursor: pointer;
+		}
+			div.post:hover span.arrow {
+				background: url(../img/bgArrowOver.png) 14px center no-repeat;	
+			}
+			div.post.starred span.remove {
+				background: url(../img/bgRemove.png) center center no-repeat;
+				text-indent: -999px;
+				display: table-cell;
+				height: 15px;
+				width: 15px;
+				padding: 1px 9px 1px 10px;
+			}
+			div.post.starred  span.remove:hover {
+				background: url(../img/bgRemoveOver.png) center center no-repeat;
+			}
+			span.nickname {
+				font-weight: bold;
+				padding: 0;
+				display: table-cell;
+				text-align: left;
+				height: 100%;
+				word-break:break-all;
+			}
+			span.message {
+				margin:0 10px;
+				word-break:break-all;
+				display: table-cell;
+			}				
+				span.message span.nickname {
+					font-weight: bold;
+					display: inline;
+					padding: 0;
+					display: inline;
+					text-align: left;
+				}
+			span.arrow {
+				display: table-cell;
+				width: 20px;
+				background: url(../img/bgArrow.png) 14px center no-repeat;
+				padding: 6px;	
+			}
+		
+				

@@ -1,0 +1,58 @@
+/***
+Erstwhile Style for Linkinus by Xuff
+
+Customize per instructions below.
+
+Questions?  Comments?  justin@xanthra.com
+***/
+
+/* Un-comment the following line to REMOVE the username@hostname display on joins */
+/* .userhost { display: none; } */
+
+/* Un-comment the following line to REMOVE the timestamps */
+/* .time { display: none; } */
+
+/* Comment out the following line to REMOVE bold highlighting of your own nick */
+/* #content .name { font-weight: bold; }
+
+/* Past Content */
+/* #paper1 { padding: 0 0 0 33px; background: url(../img/paper-bg.png) top left repeat-y #eee; border-bottom: ridge 4px #eee; }
+#paper2 { padding: 0 33px 0 0; background: url(../img/paper-bg.png) top right repeat-y; overflow: hidden; }
+#pastcontent { color: #555; font-size: .9em; text-shadow: 0 0 1px #888; border-left: dotted 1px #ccc; border-right: dotted 1px #ccc; } */
+
+#pastcontent, #pastcontent a {
+	background: #444;
+	color: #292929;
+	text-shadow: 0 0 4px #111;
+	margin-bottom: 5px;
+	}
+
+/* Colors! */
+.reverse { color: #000; background: #fff; }
+#content .name { font-weight: bold; }
+#content .time { color: #050; text-shadow: 0 0 6px #0b0; }
+#content .highlighted { background: url(../img/scanlines-bg.png) top left fixed #030; }
+#content .highlighted .time { color: #080; text-shadow: 0 0 6px #0f0; }
+#content .action { color: #0b6; text-shadow: 0 0 6px #0fa; }
+#content .join { color: #595; text-shadow: 0 0 6px #4f4; }
+#content .kick { color: #d55; text-shadow: 0 0 6px #fbb; }
+#content .message { color: #0c0; text-shadow: 0 0 6px #0f0; }
+#content .message .nickname { color: #0c0; text-shadow: 0 0 6px #0b0; }
+#content .highlighted .message .nickname { color: #0c0; text-shadow: 0 0 6px #0e0; }
+#content .modechange { color: #69a; text-shadow: 0 0 6px #bef; }
+#content .nick { color: #0f0; text-shadow: 0 0 6px #3af; }
+#content .notice { color: #ab0; text-shadow: 0 0 6px #ef0; }
+#content .part { color: #b6b; text-shadow: 0 0 6px #f2f; }
+#content .quit { color: #a82; text-shadow: 0 0 6px #fc7; }
+#content .raw { color: #6f6; text-shadow: 0 0 6px #cfc; }
+#content .topicchange { color: #aaa; text-shadow: 0 0 6px #fff; }
+#content a { text-decoration: none; border-bottom: dotted 1px #08a; color: #08a; text-shadow: 0 0 6px #0bf; }
+#content a:hover { border-bottom: dotted 1px #0cf; color: #0cf; text-shadow: 0 0 6px #fff; }
+body { background-color: #000; }
+
+/* Don't mess with this stuff. */
+body  { margin: 0; padding: 0; background: url(../img/scanlines-bg.png) top left fixed #000; font-family: "Courier"; }
+table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+td { margin: 0; padding: .15em 0 .15em .5em; vertical-align: top; word-wrap: break-word; }
+.time { width: 5.75em; text-align: center; }
+#content { padding: 0 4px 0 4px; }

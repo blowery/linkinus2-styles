@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LKDefaultVariant</key>
+	<string>Normal</string>
+	<key>LKVariants</key>
+	<array>
+	    <string>Normal</string>
+	    <string>Dark</string>
+			<string>Normal (FlashEmbeds)</string>
+			<string>Dark (FlashEmbeds)</string>
+	</array>
+</dict>
+</plist>

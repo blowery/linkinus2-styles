@@ -1,0 +1,190 @@
+/*
+ *  dark.css
+ *  Whisper Dark
+ *
+ *  Created by Nicholas Penree on 4/21/09.
+ *  Copyright 2009 Conceited Software. All rights reserved.
+*/
+
+html.normal {
+    color: #fff;
+    background-color: #232323;
+    font: 12px/1.3em 'Lucida Grande' sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.normal a:link, a:visited, a:hover, a:active {
+    color: #ccc;
+}
+
+body.normal .text span {
+    display: block;
+}
+
+body.normal .line {
+    padding: 0;
+    margin: 0;
+     background-color: #181818;
+    line-height: 130%;
+}
+
+body.normal .event {
+    padding: 0.2em;
+    margin: 0;
+    color: #363636;
+    background: #252525;
+}
+
+body.normal .event + .event {
+    border-top: #000 1px solid;
+}
+
+body.normal .text span.message {
+    border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+body.normal .text + .event {
+    margin-top: -1px;
+}
+
+body.normal .sender {
+    padding: 0.4em 0;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    width: 130px;
+    overflow: hidden;
+}
+
+body.normal .line .message {
+    margin: 0 0 0 134px;
+    padding: 0.4em;
+    color: #eee;
+    border-left: 1px solid rgb(64, 64, 64);
+    background-color: #232323;
+}
+
+body.normal .event .message {
+    margin: 0;
+    padding: 0.4em;
+    border: 0;
+    color: #a6b9c0;
+    background: none;
+    font: bold 11px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+body.normal .line .place {
+    display: block;
+    color: #999;
+    margin: 0;
+    font-size: 12px;
+}
+
+ body.normal .line[type=action] .sender {
+	border-bottom: 1px solid rgb(64, 64, 64);
+    margin-bottom:-1px;
+    width: 134px;
+}
+ body.normal .line[type=action] .sender[starred=true] {
+    background-color: #3E8040;
+    width: 134px;
+    border-left: 1px solid #3E8040;
+    border-top: 1px solid #53B95D;
+}
+
+body.normal .line span.message[starred=true] {
+    background-color: #3E8040;
+    border-bottom: none;
+    border-top: 1px solid #53B95D;
+    border-left: 1px solid #53B95D;
+}
+
+body.normal .line[highlight=true] span.message, body.normal .line span.message[highlight=true] {
+    background-color: #435B83;
+    border-bottom: none;
+    border-top: 1px solid #5A81BD;
+    border-left: 1px solid #5A81BD;
+}
+
+body.normal .line .time[highlight=true] {
+    color: #fff;
+}
+
+body.normal .line .time[starred=true] {
+    color: #fff;
+}
+
+body.normal .line[highlight=true][type=action] .sender {
+    font-style: italic;
+    background-color: #435B83;
+    width: 134px;
+    border-top: 1px solid #5A81BD;
+    border-left: 1px solid #435B83;
+}
+
+body.normal .line[type=action] .message {
+    background: #181818;
+    border-left: none;
+    margin: 0 0 0 134px;
+    color: #eee;
+    border-bottom: 1px solid rgb(64, 64, 64);
+
+}
+
+/* nickname for text messages */
+
+body.normal .sender[type=normal] {
+    color: #333;
+   /* clear:both;*/
+}
+
+body.normal .message[type=action] {
+    color: #303030;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+div#topic {
+    -webkit-box-shadow: #333 0 4px 4px;
+    border-bottom: 1px solid rgb(80, 80, 80);
+    background-color: #111;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(98, 98, 98)), color-stop(0.5, rgb(32, 32, 32)), color-stop(0.5, rgb(0, 0, 0)), to(rgb(0, 0, 0)));
+}
+
+div#topic span#topicText {
+	    color: #fff;
+	    text-shadow: none;
+
+}
+div#topic span#topicText a {
+	color: #fff;
+}
+
+.place { color: #008; }
+.sender { text-shadow: #333 0px 1px; }
+.message { text-shadow: #333 0px 1px; }
+.sender[type=two] { color: #2e1; }
+.sender[type=three] { color: #e14; }
+
+.embedded-image{
+    text-shadow: #555 0px 1px;
+    background-color:#111;
+    background:-webkit-gradient(linear, left top, left bottom, from(#333), to(#555));
+    z-index:101;
+    width:99%;
+    padding-left:0px;
+    -webkit-border-radius:6px;
+    padding-right:10px;
+}
+
+div.image div,
+div.video div,
+div.image span,
+div.image a,
+div.video span,
+div.video a {
+    background-color:#111;
+    background:-webkit-gradient(linear, left top, left bottom, from(#333), to(#555));
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="normal" type="query">
+    
+    <head>
+        <title></title>
+        <script type="text/javascript" charset="utf-8">var type='query';</script>
+<meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0;'>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    	<script src="js/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="js/definitions/common.js" type="text/javascript" charset="utf-8"></script>		
+    	<script src="js/controllers/index.js" type="text/javascript" charset="utf-8"></script>
+    	<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    	<link rel="stylesheet" href="css/whisper.css" type="text/css" media="screen" title="no title" charset="utf-8" />    	
+    	<script type="text/javascript" chatset="utf-8">
+    	    if (STYLE_VARIANT != '') {
+    	        document.write('<link rel="stylesheet" href="css/' + STYLE_VARIANT + '.css" type="text/css" media="screen" title="no title" charset="utf-8" />');
+    	    }
+    	</script>
+    </head>		
+    
+    <body class="normal" type="query" onfocus="activateWindow()" onblur="deactivateWindow()">
+
+         <div id="topic" onClick="toggleTopic()" ondblclick="showInspector()">
+            <span id="topicText"><img src="img/ellipsis.png" style="margin-top:-2px;vertical-align:top" /></span>
+        </div>
+       
+        <div style="clear:both"></div>
+        
+        <div id="pastcontent_outter">
+            <div id="pastcontent">
+
+            </div>
+            <div class="linebreak"><img src="img/break.tiff" /></div>
+	    </div>
+	    
+        <div style="clear:both"></div>
+        
+        <div id="content">
+
+        </div>
+        
+        <div id="overlay"></div>
+       
+        <div id="loading">
+           <span>Whisper<sup> 2.2</sup></span>
+           <img src="img/whisper.png" />
+           <p>Loading<img src="img/ellipsis.png" style="vertical-align:top" /></p>
+       </div>  
+    </body>
+
+</html>
